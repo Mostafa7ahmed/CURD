@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    color: #ffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    margin: 4px 0;
+    outline: none;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #111;
+    color: aliceblue;
+
+
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.inputs .price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputs .price input {
+    margin: 0 4px;
+    width: 20%;
+}
+
+.inputs .price span {
+    margin: 0 0 0 10px;
+    background: #a00d02;
+    padding: 5px 3px;
+    border-radius: 5px;
+}
+
+.inputs .price span::before {
+    content: "Total :";
+    margin: 0 5px;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: #a00d02;
+    padding: 1px 6px;
+    border-radius: 5px;
+
+}
+
+.crud button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 6px 0;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+    transition: .5s;
+
+}
+
+.crud button:hover {
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+.btnsearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnsearch button {
+    width: 45%;
+}
+
+.ResTable {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table tr.active {
+    background-color: #111;
+    padding: 10px;
+
+
+}
+
+table tr.active th {
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+table tr td {
+    padding: 5px;
+}
